@@ -1166,14 +1166,15 @@ a.article-title:hover {
 }
 .article-entry code {
   background: #ffc0cb;
-  color: #333;
+  color: #333 !important;
   border-radius: 4px;
   margin: auto 3px;
   padding: 0 0.3em;
 }
-.article-entry pre code {
+.article-entry pre > code {
   background: none;
   text-shadow: none;
+  color: #999 !important;
   padding: 0;
 }
 .article-entry .highlight pre {
