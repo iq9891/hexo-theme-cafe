@@ -299,6 +299,16 @@ body {
 .widget dt {
   font-weight: bold;
 }
+.widget-title.categories:before,
+.widget-title.archive:before,
+.widget-title.tagcloud:before,
+.widget-title.tags:before,
+.widget-title.recent-posts:before,
+.widget-title.lastest-comments:before,
+.widget-title.hot-comment-posts:before {
+  font-family: FontAwesome;
+  padding-right: 4px;
+}
 #header {
   padding-top: 1em;
   position: relative;
@@ -1507,6 +1517,27 @@ span.ua .location:before {
 }
 .widget-wrap {
   margin: 50px 0;
+}
+.widget-title.categories:before {
+  content: "\f0c6";
+}
+.widget-title.archive:before {
+  content: "\f03c";
+}
+.widget-title.tagcloud:before {
+  content: "\f02c";
+}
+.widget-title.tags:before {
+  content: "\f02b";
+}
+.widget-title.recent-posts:before {
+  content: "\f1ea";
+}
+.widget-title.lastest-comments:before {
+  content: "\f27b";
+}
+.widget-title.hot-comment-posts:before {
+  content: "\f075";
 }
 .widget {
   color: #777;
