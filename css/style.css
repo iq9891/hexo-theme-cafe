@@ -306,15 +306,7 @@ body {
 .widget-title.recent-posts:before,
 .widget-title.lastest-comments:before,
 .widget-title.hot-comment-posts:before,
-.widget ul ul li>a:before,
-.widget ol ul li>a:before,
-.widget dl ul li>a:before,
-.widget ul ol li>a:before,
-.widget ol ol li>a:before,
-.widget dl ol li>a:before,
-.widget ul dl li>a:before,
-.widget ol dl li>a:before,
-.widget dl dl li>a:before {
+#categories ul.category-list-child li >a:before {
   font-family: FontAwesome;
   padding-right: 4px;
 }
@@ -1621,15 +1613,7 @@ span.ua .location:before {
 .widget dl dl {
   margin-left: 15px;
 }
-.widget ul ul li>a:before,
-.widget ol ul li>a:before,
-.widget dl ul li>a:before,
-.widget ul ol li>a:before,
-.widget ol ol li>a:before,
-.widget dl ol li>a:before,
-.widget ul dl li>a:before,
-.widget ol dl li>a:before,
-.widget dl dl li>a:before {
+#categories ul.category-list-child li >a:before {
   content: "\f0da";
   color: #999;
 }
