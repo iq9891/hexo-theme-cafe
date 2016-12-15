@@ -305,7 +305,16 @@ body {
 .widget-title.tags:before,
 .widget-title.recent-posts:before,
 .widget-title.lastest-comments:before,
-.widget-title.hot-comment-posts:before {
+.widget-title.hot-comment-posts:before,
+.widget ul ul li>a:before,
+.widget ol ul li>a:before,
+.widget dl ul li>a:before,
+.widget ul ol li>a:before,
+.widget ol ol li>a:before,
+.widget dl ol li>a:before,
+.widget ul dl li>a:before,
+.widget ol dl li>a:before,
+.widget dl dl li>a:before {
   font-family: FontAwesome;
   padding-right: 4px;
 }
@@ -1611,7 +1620,18 @@ span.ua .location:before {
 .widget ol dl,
 .widget dl dl {
   margin-left: 15px;
-  list-style: disc;
+}
+.widget ul ul li>a:before,
+.widget ol ul li>a:before,
+.widget dl ul li>a:before,
+.widget ul ol li>a:before,
+.widget ol ol li>a:before,
+.widget dl ol li>a:before,
+.widget ul dl li>a:before,
+.widget ol dl li>a:before,
+.widget dl dl li>a:before {
+  content: "\f0da";
+  color: #999;
 }
 .widget {
   line-height: 1.6em;
@@ -1628,10 +1648,6 @@ span.ua .location:before {
 .widget ul ol,
 .widget ol ol {
   margin: 0 20px;
-}
-.widget ul ul,
-.widget ol ul {
-  list-style: disc;
 }
 .widget ul ol,
 .widget ol ol {
