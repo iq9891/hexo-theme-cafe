@@ -1052,7 +1052,12 @@ a.article-title:hover {
   text-decoration: underline;
 }
 .archives-wrap {
-  margin: 50px 0;
+  margin: 50px 0 50px 120px;
+}
+@media screen and (max-width: 479px) {
+  .archives-wrap {
+    margin: 50px 0;
+  }
 }
 .archives:before,
 .archives:after {
@@ -1065,24 +1070,10 @@ a.article-title:hover {
 .archive-year-wrap {
   margin-bottom: 1em;
 }
-.archives {
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .archives {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-@media screen and (min-width: 768px) {
-  .archives {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
+.archive-year-post {
+  color: #999;
+  font-size: 0.85em;
+  margin-left: 1em;
 }
 .archive-article {
   -webkit-column-break-inside: avoid;
@@ -1092,15 +1083,14 @@ a.article-title:hover {
 }
 .archive-article-inner {
   padding: 10px;
-  margin-bottom: 15px;
 }
 .archive-article-title {
+  margin-left: 1em;
   color: #333;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   transition: color 0.2s;
-  line-height: 1.6em;
 }
 .archive-article-title:hover {
   color: #258fb8;
@@ -1109,10 +1099,10 @@ a.article-title:hover {
   margin-top: 1em;
 }
 .archive-article-date {
+  float: left;
   color: #999;
   text-decoration: none;
   font-size: 0.85em;
-  line-height: 1em;
   margin-bottom: 0.5em;
   display: block;
 }
@@ -1202,14 +1192,15 @@ a.article-title:hover {
 }
 .article-entry pre,
 .article-entry .highlight {
-  background: #2d2d2d;
+  background: #f5f2f0;
   margin: 0 -20px;
   padding: 15px 20px;
   border-style: solid;
   border-color: #ddd;
-  border-width: 1px 0;
+  border-width: 2px;
+  border-radius: 10px;
   overflow: auto;
-  color: #ccc;
+  color: #4d4d4c;
   line-height: 25.6px;
 }
 .article-entry .highlight .gutter pre,
@@ -1223,7 +1214,7 @@ a.article-title:hover {
 }
 .article-entry code {
   background: #ffc0cb;
-  color: #333 !important;
+  color: #333;
   border-radius: 4px;
   margin: auto 3px;
   padding: 0 0.3em;
@@ -1231,7 +1222,7 @@ a.article-title:hover {
 .article-entry pre > code {
   background: none;
   text-shadow: none;
-  color: #999 !important;
+  color: #333;
   padding: 0;
 }
 .article-entry .highlight pre {
@@ -1249,7 +1240,7 @@ a.article-title:hover {
 }
 .article-entry .highlight figcaption {
   font-size: 0.85em;
-  color: #999;
+  color: #8e908c;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -1272,14 +1263,14 @@ a.article-title:hover {
   height: 25.6px;
 }
 .article-entry .highlight .line.marked {
-  background: #515151;
+  background: #d6d6d6;
 }
 .article-entry .gist {
   margin: 0 -20px;
   border-style: solid;
   border-color: #ddd;
   border-width: 1px 0;
-  background: #2d2d2d;
+  background: #f5f2f0;
   padding: 15px 20px 15px 0;
 }
 .article-entry .gist .gist-file {
@@ -1305,8 +1296,8 @@ a.article-title:hover {
   border: none;
 }
 .article-entry .gist .gist-file .gist-meta {
-  background: #2d2d2d;
-  color: #999;
+  background: #f5f2f0;
+  color: #8e908c;
   font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
@@ -1322,7 +1313,7 @@ a.article-title:hover {
 }
 pre .comment,
 pre .title {
-  color: #999;
+  color: #8e908c;
 }
 pre .variable,
 pre .attribute,
@@ -1336,7 +1327,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #f2777a;
+  color: #c82829;
 }
 pre .number,
 pre .preprocessor,
@@ -1344,12 +1335,12 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #f99157;
+  color: #f5871f;
 }
 pre .class,
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #9c9;
+  color: #718c00;
 }
 pre .string,
 pre .value,
@@ -1357,10 +1348,10 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #9c9;
+  color: #718c00;
 }
 pre .css .hexcolor {
-  color: #6cc;
+  color: #3e999f;
 }
 pre .function,
 pre .python .decorator,
@@ -1370,11 +1361,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #69c;
+  color: #4271ae;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #c9c;
+  color: #8959a8;
 }
 @media screen and (max-width: 479px) {
   #mobile-nav {
