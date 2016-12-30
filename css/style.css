@@ -1546,6 +1546,17 @@ span.ua .location:before {
   border-radius: 4px;
   padding: 0 5px !important;
 }
+.back-to-top-btn {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 100px;
+  z-index: 200px;
+  cursor: pointer;
+}
+.back-to-top-btn:hover {
+  border: 0.5px dashed #555;
+}
 @media screen and (min-width: 768px) {
   #sidebar {
     display: inline;
