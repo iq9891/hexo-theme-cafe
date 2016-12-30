@@ -78,7 +78,7 @@
         <div class="archive-year-wrap">
           <a href="/archives/2016" class="archive-year">2016</a>
         </div>
-         <span class="archive-year-post">12 post  this year</span>
+         <span class="archive-year-post">11 post  this year</span>
         <div class="archives">
     
     <article class="archive-article archive-type-post">
@@ -158,11 +158,11 @@
           </li>
         
           <li>
-            <a href="/2016/11/30/videos/">Videos</a>
+            <a href="/2016/11/29/categories/">Categories</a>
           </li>
         
           <li>
-            <a href="/2016/11/29/categories/">Categories</a>
+            <a href="/2016/11/29/tags/">Tags</a>
           </li>
         
       </ul>
@@ -224,6 +224,17 @@
 
 <script src="/js/script.js"></script>
 <script src="/js/elevator.js"></script>
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
+<script>
+// Elevator script included on the page, already.
+window.onload = function() {
+  var elevator = new Elevator({
+    selector:'.back-to-top-btn',
+    element: document.querySelector('.back-to-top-btn'),
+    duration: 1000 // milliseconds
+  });
+}
+</script>
   </div>
 </body>
 </html>

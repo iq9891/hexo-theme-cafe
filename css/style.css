@@ -1557,6 +1557,15 @@ span.ua .location:before {
 .back-to-top-btn:hover {
   border: 0.5px dashed #555;
 }
+@media screen and (max-width: 479px) {
+  .back-to-top-btn {
+    width: auto;
+    height: 60%;
+  }
+  .back-to-top-btn:hover {
+    border: none;
+  }
+}
 @media screen and (min-width: 768px) {
   #sidebar {
     display: inline;
