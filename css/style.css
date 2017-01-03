@@ -1551,7 +1551,7 @@ span.ua .location:before {
   display: none;
   right: 30px;
   bottom: 100px;
-  z-index: 200px;
+  z-index: 300 !important;
   cursor: pointer;
 }
 .back-to-top-btn:hover {
@@ -1561,6 +1561,7 @@ span.ua .location:before {
   .back-to-top-btn {
     width: auto;
     height: 60px;
+    z-index: 400;
   }
   .back-to-top-btn:hover {
     border: none;
