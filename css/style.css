@@ -1585,6 +1585,7 @@ span.ua .location:before {
   line-height: 1em !important;
 }
 .follow a {
+  color: #50504f !important;
   text-decoration: none !important;
 }
 .follow .github:before {
