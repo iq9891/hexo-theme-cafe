@@ -6,7 +6,7 @@ menu:
 rss: /atom.xml
 
 # footer底部显示联系邮箱（在博客配置文件下添加email配置也是一样的效果）
-email: 'youemail@outlook.com'
+email: '649076408@qq.com'
 
 # 内容 Content
 excerpt_link: 继续阅读全文 »
@@ -17,10 +17,10 @@ fancybox: true
 social_title: Follow me
 # Social links 社交链接
 social:
-  github: https://github.com/giscafer
-  weibo: http://weibo.com/laohoubin
+  github: https://github.com/iq9891
+  weibo: http://weibo.com/magnum01
   zhihu: http://www.zhihu.com/people/giscafer
-  email: 'youemail@outlook.com'
+  email: '649076408@qq.com'
 
 
 
@@ -63,7 +63,7 @@ show_count: true
 
 # 标签云TagClound
 # 如果启动，则标签云颜色为随机
-tagcloud_color: false 
+tagcloud_color: false
 
 
 # 其他参数
@@ -71,7 +71,7 @@ google_analytics:
 favicon: /favicon.png
 # 若使用多说，此处填写的是多说评论账号ID
 # 若使用Disqus，请在博客 config 文件中填写disqus_shortname，并设置duosuo: false关闭多说评论
-duoshuo_shortname: false
+duoshuo_shortname: true
 google_plus:
 fb_admins:
 fb_app_id:
