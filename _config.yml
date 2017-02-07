@@ -3,7 +3,7 @@ menu:
   首页: /
   归档: /archives
   关于: /about
-rss: 
+rss:
 
 # footer底部显示联系邮箱（在博客配置文件下添加email配置也是一样的效果）
 email: '649076408@qq.com'
@@ -68,7 +68,7 @@ tagcloud_color: false
 
 # 其他参数
 google_analytics:
-favicon: /favicon.png
+favicon: //iq9891.github.io/favicon.ico
 # 若使用多说，此处填写的是多说评论账号ID
 # 若使用Disqus，请在博客 config 文件中填写disqus_shortname，并设置duosuo: false关闭多说评论
 duoshuo_shortname: true

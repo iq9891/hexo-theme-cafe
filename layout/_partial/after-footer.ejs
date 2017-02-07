@@ -18,15 +18,15 @@
     	<script type="text/javascript">
         var duoshuoQuery = {short_name:"<%=theme.duoshuo_shortname%>"};
       </script>
-      <%- js('duoshuo/embed') %>
+      <script src="//iq9891.github.io/duoshuo/embed.js"></script>
 <% } %>
 
- <%- js('js/is.js') %>
+<script src="//iq9891.github.io/js/is.js"></script>
 
 <% if (theme.fancybox){ %>
-  <%- css('fancybox/jquery.fancybox') %>
-  <%- js('fancybox/jquery.fancybox.pack') %>
+  <link href="//iq9891.github.io/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css">
+  <script src="//iq9891.github.io/fancybox/jquery.fancybox.pack.js"></script>
 <% } %>
 
-<%- js('js/script') %>
-<%- js('js/elevator') %>
+<script src="//iq9891.github.io/js/script.js"></script>
+<script src="//iq9891.github.io/js/elevator.js"></script>
