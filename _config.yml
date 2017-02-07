@@ -3,7 +3,7 @@ menu:
   首页: /
   归档: /archives
   关于: /about
-rss: /atom.xml
+rss: 
 
 # footer底部显示联系邮箱（在博客配置文件下添加email配置也是一样的效果）
 email: '649076408@qq.com'
@@ -14,7 +14,7 @@ fancybox: true
 
 # 启用social widgets时有效
 # 社交widget文本字体，不填写则不显示title
-social_title: Follow me
+social_title: 我的社交
 # Social links 社交链接
 social:
   github: https://github.com/iq9891
