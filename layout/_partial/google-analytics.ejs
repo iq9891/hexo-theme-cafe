@@ -12,3 +12,18 @@ ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 <% } %>
+
+<% if (theme.baidu_analytics){ %>
+<!-- 百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?8bf97788829b64b2e0ecdd008e5eb6b3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- End 百度统计 -->
+<% } %>
