@@ -47,7 +47,7 @@
         <div class="archive-year-wrap">
           <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
         </div>
-         <span class="archive-year-post"><%= yearObject[year] %> post  this year</span>
+         <span class="archive-year-post"><%= yearObject[year] %>&nbsp;post&nbsp;<%= year %>&nbsp;year</span>
         <div class="archives">
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
